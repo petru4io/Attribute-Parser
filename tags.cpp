@@ -5,7 +5,7 @@ using namespace std;
 
 string get_tag(string s, int* pos, char sep){
     string tmp;
-    while (s[(*pos)] != sep) tmp += s[(*pos)++];
+    while ((s[(*pos)] != sep) && (s[(*pos)] != '>')) tmp += s[(*pos)++];
     return tmp;
 }
 
